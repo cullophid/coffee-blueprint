@@ -1,8 +1,14 @@
 import assert from 'assert'
-import msg from './module'
+import {add, sub} from '../'
 
-describe('message', () => {
-  it('should be \'im a module\'', () => {
-    assert.equal(meg, 'im a module')
+describe('add', () => {
+  it('should return the sum of the two values', () => {
+    assert.equal(add(1, 2), 3)
+  })
+})
+
+describe('sub', () => {
+  it('should return the difference between the two values', () => {
+    assert.equal(sub(1, 2), -1)
   })
 })
